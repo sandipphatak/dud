@@ -58,6 +58,24 @@ select:-webkit-autofill, input:-webkit-autofill {
 
 .hidden{display: none}
 
+
+/*********common css***********/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 30.75%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {float: left; padding: 15px;border: 1px solid red; margin: 0 15px}
+.row::after {content: "";clear: both; display: table;}
+/***************/
+
 /*---------------header css start-------------------*/
 .headWrap{background: #fff; width: 100%;z-index: 1; position: relative;}
 .headWrap .header .logo img{display: block;margin-top: 18px}
@@ -103,7 +121,28 @@ select:-webkit-autofill, input:-webkit-autofill {
 
 /*-----sameer------*/
   /*--blog--*/
-  .tablist li a { font-weight: 400; font-size: 14px; color: #1b1d24}
+  .tablist { float: left; margin-top: 12px}
+  .tablist li { display: inline-block; padding: 0 10px;}
+  .tablist li a { font-weight: 400; font-size: 14px; text-transform: uppercase; color: #1b1d24;transition: .5s ease all}
+  .tablist li a:hover, .tablist li a.active { border-bottom: 1px solid #000; padding-bottom: 5px  }
+  .crsl-items{margin: 30px auto;}
+  .crsl-item figcaption{ 
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 98.9%;
+    padding: 10px;
+    color: #FFF;
+    background: rgba(20,22,29,.5); padding:20px; color: #6d6d6e; font-size: 14px; font-weight: 700}
+  .blogmsg { display: block; text-transform: uppercase; color: #fff; font-size: 18px; margin-bottom: 10px }
+  .crsl-nav{position: relative;min-height: 1px;display: block!important; margin-right: 7px; float: right;}
+  .crsl-nav .previous, .crsl-nav .next{float: right; background: url(../images/prev.jpg) no-repeat 0; text-indent: -70px;
+    overflow: hidden; width: 32px; height: 52px;}
+  .crsl-nav .next{float: right; background: url(../images/next.jpg) no-repeat 0; }
+  .advbg { background: url(../images/homemainbg.jpg) no-repeat 0 0; background-size: cover; }
+  .pad-tb-20 { padding: 64px 0}
+  .bgGray { background: #b0b1b7; }
+  
 
 /*-----end sameer------*/
 
