@@ -1,4 +1,4 @@
-*{ margin:0; padding: 0 }
+*{ margin:0; padding: 0; box-sizing: border-box;}
 *:focus{outline: none;}
 .clearfix:before,
 .clearfix:after {content: '\0020';display: block;overflow: hidden;visibility: hidden;width: 0;height: 0}
@@ -54,15 +54,21 @@ select:-webkit-autofill, input:-webkit-autofill {
 .container{width: 1168px; margin:0 auto;}
 .containerMd{width: 1090px;margin: 0 auto}
 
+<<<<<<< HEAD
 .dropdownMenu{width: 100%;top:-194px;position: absolute; }
+=======
+
+.dropdownMenu{width: 100%;top:-194px;position: absolute; display: none; z-index: 0}
+
+>>>>>>> 44bd71d68d2e3ef61411e9773c2cd6530dc371ae
 .hidden{display: none}
 
 /*---------------header css start-------------------*/
-.headWrap{background: #fff; position: fixed;width: 100%;z-index: 1}
+.headWrap{background: #fff; width: 100%;z-index: 1; position: relative;}
 .headWrap .header .logo img{display: block;margin-top: 18px}
 .headWrap .header li{float: left;position: relative;}
 .headWrap .header li a{color:#1b1d24; font-size: 19px;text-transform: uppercase;font-weight: 700;display: block;padding:43px 25px;}
-
+.navigation { position: relative; z-index: 1 }
 .headWrap .dropdown .arrowup {width: 0;height: 0;border-left: 6px solid transparent;border-right: 6px solid transparent; border-bottom: 6px solid #3b2f43;margin: 0 auto;}
 
 .registerWrap{background: #374785;padding: 55px 0;}
@@ -97,6 +103,14 @@ select:-webkit-autofill, input:-webkit-autofill {
 .joinDud{background: #1b1d24; text-transform: uppercase;padding: 90px 0}
 .jNow{font-size: 20px;color: #fff;background: #e32b45;width: 190px;height: 50px;line-height: 50px; margin: 35px auto 0;display: block;font-weight: 700}
 
+
+
+
+/*-----sameer------*/
+  /*--blog--*/
+  .tablist li a { font-weight: 400; font-size: 14px; color: #1b1d24}
+
+/*-----end sameer------*/
 
 /*---------------footer css start-------------------*/
 .footerWrap{background: #374785;padding: 60px 0}
