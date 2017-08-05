@@ -49,18 +49,13 @@ select:-webkit-autofill, input:-webkit-autofill {
 .headH1{color: #fff; font-size: 60px;font-weight: 900}
 .headH1 span{font-weight: 400}
 .mgZero{margin:0 !important }
-.bgGrey{background: #b0b1b7}
 
 .container{width: 1168px; margin:0 auto;}
 .containerMd{width: 1090px;margin: 0 auto}
 
-<<<<<<< HEAD
-.dropdownMenu{width: 100%;top:-194px;position: absolute; }
-=======
 
 .dropdownMenu{width: 100%;top:-194px;position: absolute; display: none; z-index: 0}
 
->>>>>>> 44bd71d68d2e3ef61411e9773c2cd6530dc371ae
 .hidden{display: none}
 
 /*---------------header css start-------------------*/
