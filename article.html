@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DUD</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900,900i" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="registerWrap dropdownMenu  clearfix" >
+			<div class="signIn registerContainer clearfix">
+				<h5 class="headH5">log in with</h5>
+				<div class="socialLogin fl">
+					<div class="btnBlock">
+						<input type="button" name="facebook" class="fbLogin loginbtn" value="Facebook">
+						<input type="button" name="twitter" class="twitLogin loginbtn" value="Twitter">
+						<input type="button" name="gPlus" class="gPlusLogin loginbtn" value="Google">
+					</div>
+					
+					<p class="txtCopy mg15">New to DUD?  <a href="#" class="openLink ">Sign Up</a></p>
+				</div>
+				<div class="dividerBlock fl">
+					<div class="divider"></div>
+					<span class="txt">Or</span>
+				</div>
+				<div class="emailLogin fr">
+					<form>
+						<input type="txt" name="email" placeholder="Email" class="inputy">
+						<input type="password" name="password" placeholder="Password" class="inputy">
+						<div class="clearfix mg15">
+							<input type="button" value="SIGN IN" class="btnSign fl">
+							<a href="#" class="openLink fr">Forgot the password?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper clearfix">
+			<div class="headWrap clearfix">
+				<div class="container clearfix">
+					<div class="header clearfix">
+						<div class="logo fl"><a href="#"><img src="images/logo.png"></a></div>
+						<div class="nav fl">
+							<ul>
+								<li><a href="#">About us</a></a></li>
+								<li><a href="#">Tour</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Sponsorship</a></li>
+							</ul>
+						</div>
+						<div class="siteLogin fr">
+							<ul>
+								<li class="dropdown">
+									<a href="javascript:void(0)" class="loginpanel">Login</a>
+									<!-- log In end  -->
+								</li>
+								<li><a href="#" class="loginpanel">Signup</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- container end -->
+			</div>
+			<!-- headWrap end -->
+			<div class="container">
+				<div class="tabpanel">
+					
+					
+					<ul class="tablist">
+						<li><a class="active" href="javascript:void(0)">Events</a></li>
+						<li><a href="javascript:void(0)">Winners</a></li>
+						<li><a href="javascript:void(0)">Tags</a></li>
+						<li><a href="javascript:void(0)">Others</a></li>
+					</ul>
+					
+					<section class="row">
+						<div class="col-12 articlepanel">
+							<article>sss
+								<div class="col-8 pad-0 leftpanel">
+								<figure>
+									<img src="images/articlepic.jpg" alt="" />
+								</figure>
+								</div>
+
+								<div class="col-4 rightpanel fr"></div>
+
+							</article>
+						</div>
+					</section>
+					
+					
+				</div>
+			</div>
+			
+			<!-- homeBaner end -->
+			
+			<!-- joinDud end -->
+			<div class="footerWrap clearfix">
+				<div class="containerMd clearfix">
+					<div class="footerLogo fl">
+						<a href="#"><img src="images/footlogo.png"></a>
+					</div>
+					<div class="social fl">
+						<h6 class="headH6">follow Us</h6>
+						<a href="#" class="fb socialIcon"></a>
+						<a href="#" class="insta socialIcon"></a>
+						<a href="#" class="twit socialIcon"></a>
+						<a href="#" class="yt socialIcon"></a>
+					</div>
+					<div class="instaUpdates fr">
+						<h6 class="headH6">instagram</h6>
+						<div class="inUpdate fl"></div>
+						<div class="inUpdate fl"></div>
+						<div class="inUpdate fl"></div>
+					</div>
+				</div>
+				<!-- container end -->
+			</div>
+			<!-- footerWrap end -->
+			<div class="btmFooter txt-center clearfix">
+				<div class="containerMd containerMd">
+					<a href="#">Terms & Conditions </a>
+					<a href="#">Waiver</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">&copy; 5678MediaGroup  </a>
+					<a href="#">Developed & Maintained by Infinity Design</a>
+				</div>
+			</div>
+			<!-- btmFooter end -->
+			
+		</div>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/responsiveCarousel.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".loginpanel").on("click",function(){
+				$(".dropdownMenu").animate({top: "110px"});
+			});
+			$('.crsl-items').carousel({ autoRotate: 8000, visible: 2, itemMinWidth: 400, itemMargin: 0 });
+		});
+		</script>
+	</body>
+</html>
