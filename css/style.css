@@ -21,7 +21,7 @@ input[type="submit"] {
      background: none;
      border: 0
 } 
-
+button { border: 0; cursor: pointer; }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ffffff;
 }
@@ -41,6 +41,7 @@ select:-webkit-autofill, input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
 }
 
+/********common css******/
 .fl{float: left;}
 .fr{float: right}
 .txt-left{text-align: left}
@@ -49,6 +50,9 @@ select:-webkit-autofill, input:-webkit-autofill {
 .headH1{color: #fff; font-size: 60px;font-weight: 900}
 .headH1 span{font-weight: 400}
 .mgZero{margin:0 !important }
+
+/*******************/
+
 
 .container{width: 1168px; margin:0 auto;}
 .containerMd{width: 1090px;margin: 0 auto}
@@ -72,8 +76,16 @@ select:-webkit-autofill, input:-webkit-autofill {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-[class*="col-"] {float: left; padding: 15px;border: 1px solid red; margin: 0 15px}
+[class*="col-"] {float: left; padding: 0 15px; border: 1px solid red}
 .row::after {content: "";clear: both; display: table;}
+
+/***button css***/
+.btn-black { background: #1b1d24; color: #fff; font-weight: 700; font-size: 20px; padding: 15px 35px;}
+
+/*******margins****/
+.marg-t-20 { margin-top: 42px }
+.pad-0 { padding: 0; }
+/**********/
 /***************/
 
 /*---------------header css start-------------------*/
@@ -139,10 +151,22 @@ select:-webkit-autofill, input:-webkit-autofill {
   .crsl-nav .previous, .crsl-nav .next{float: right; background: url(../images/prev.jpg) no-repeat 0; text-indent: -70px;
     overflow: hidden; width: 32px; height: 52px;}
   .crsl-nav .next{float: right; background: url(../images/next.jpg) no-repeat 0; }
-  .advbg { background: url(../images/homemainbg.jpg) no-repeat 0 0; background-size: cover; }
+  .advbg { background: url(../images/adbg.jpg) no-repeat 0 0; background-size: cover; }
   .pad-tb-20 { padding: 64px 0}
   .bgGray { background: #b0b1b7; }
-  
+  .heading_h5, .heading_h6 {font-size: 18px;
+    color: #1b1d24;
+    font-weight: 700;
+    text-transform: uppercase; margin-top: 8px;
+  }
+    .heading_h6 { font-size: 14px; margin-top: 6px; }
+    .newscopy { font-size: 14px;font-weight: 400; color: #1b1d24; margin-top: 19px; line-height: 20px}
+
+/*******article page***/
+.articlepanel { margin-top: 25px; }
+  .apic {}
+/***********/
+    
 
 /*-----end sameer------*/
 
