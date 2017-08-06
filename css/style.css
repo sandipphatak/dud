@@ -49,6 +49,8 @@ select:-webkit-autofill, input:-webkit-autofill {
 .txt-center{text-align: center}
 .headH1{color: #fff; font-size: 60px;font-weight: 900}
 .headH1 span{font-weight: 400}
+.headH2{color: #606060;font-weight: 900}
+.headH2 span{font-weight: 400}  
 .mgZero{margin:0 !important }
 
 /*******************/
