@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900,900i" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/ALightBox.css" rel="stylesheet">
 	</head>
 	<body>
 		
@@ -35,35 +36,34 @@
 				
 				<!-- container end -->
 			</div>
-
 			<div class="registerWrap dropdownMenu  clearfix" >
-					<div class="signIn registerContainer clearfix">
-						<h5 class="headH5">log in with</h5>
-						<div class="socialLogin fl">
-							<div class="btnBlock">
-								<input type="button" name="facebook" class="fbLogin loginbtn" value="Facebook">
-								<input type="button" name="twitter" class="twitLogin loginbtn" value="Twitter">
-								<input type="button" name="gPlus" class="gPlusLogin loginbtn" value="Google">
+				<div class="signIn registerContainer clearfix">
+					<h5 class="headH5">log in with</h5>
+					<div class="socialLogin fl">
+						<div class="btnBlock">
+							<input type="button" name="facebook" class="fbLogin loginbtn" value="Facebook">
+							<input type="button" name="twitter" class="twitLogin loginbtn" value="Twitter">
+							<input type="button" name="gPlus" class="gPlusLogin loginbtn" value="Google">
+						</div>
+						
+						<p class="txtCopy mg15">New to DUD?  <a href="#" class="openLink ">Sign Up</a></p>
+					</div>
+					<div class="dividerBlock fl">
+						<div class="divider"></div>
+						<span class="txt">Or</span>
+					</div>
+					<div class="emailLogin fr">
+						<form>
+							<input type="txt" name="email" placeholder="Email" class="inputy">
+							<input type="password" name="password" placeholder="Password" class="inputy">
+							<div class="clearfix mg15">
+								<input type="button" value="SIGN IN" class="btnSign fl">
+								<a href="#" class="openLink fr">Forgot the password?</a>
 							</div>
-							
-							<p class="txtCopy mg15">New to DUD?  <a href="#" class="openLink ">Sign Up</a></p>
-						</div>
-						<div class="dividerBlock fl">
-							<div class="divider"></div>
-							<span class="txt">Or</span>
-						</div>
-						<div class="emailLogin fr">
-							<form>
-								<input type="txt" name="email" placeholder="Email" class="inputy">
-								<input type="password" name="password" placeholder="Password" class="inputy">
-								<div class="clearfix mg15">
-									<input type="button" value="SIGN IN" class="btnSign fl">
-									<a href="#" class="openLink fr">Forgot the password?</a>
-								</div>
-							</form>
-						</div>
+						</form>
 					</div>
 				</div>
+			</div>
 			
 			<!-- headWrap end -->
 			<div class="homeBaner">
@@ -74,6 +74,28 @@
 				<div><a href="#" class="jNow">Join Now</a></div>
 			</div>
 			<!-- joinDud end -->
+
+
+			<section class="videoWrap clearfix">
+
+				<h2 class="headH2 txt-center">FEATURED <span>VIDEOS</span></h2>
+
+				<style type="text/css">
+					.videoCnt img{width: 200px; height: auto}
+				</style>
+
+				<div class="videoCnt" data-title="Landscape">
+			
+				  <a class="alb_item" id="video1" href="//www.youtube.com/watch?v=T9kt9tqdAeo">Youtube Video</a>
+				  <a class="alb_item" href="//www.youtube.com/watch?v=3_Q-yYfjeBM">Youtube Video</a>
+				  <a class="alb_item" href="//www.youtube.com/watch?v=Mlex28M-_Tk">Youtube Video</a>
+				  ...
+				</div>
+
+			</section>
+
+
+
 			<div class="footerWrap clearfix">
 				<div class="containerMd clearfix">
 					<div class="footerLogo fl">
@@ -137,13 +159,37 @@
 			</div>
 			<!-- sign up end  -->
 		</div>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+		 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+		<script src="js/ALightBox.js"></script>
+
+
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$(".loginpanel").on("click",function(){
 				$(".dropdownMenu").show().animate({top: "110px"});
 			});
+
+			$('body').ALightBox({
+				showYoutubeThumbnails: true
+			});		
+
+
+			$( '#alb_icon_close').on('click', function() {
+	           	 // var url = $('.alb_item').attr('href');
+	           	 $('.alb_item').attr('href', '');
+	           	 // $('.alb_item').attr('href', url);
+
+	        });	
+
+
+		
+
+
 		});
 		</script>
+
+		
 	</body>
 </html>
