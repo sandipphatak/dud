@@ -77,7 +77,7 @@
 
 		function Close() {
 			$('#alb_overlay').fadeOut(settings.effectTime);
-
+			
 			if(document.title != docTitle)
 				document.title = docTitle;
 		}

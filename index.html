@@ -87,7 +87,7 @@
 				<div class="videoCnt" data-title="Landscape">
 			
 				  <a class="alb_item" id="video1" href="//www.youtube.com/watch?v=T9kt9tqdAeo">Youtube Video</a>
-				  <a class="alb_item" href="//www.youtube.com/watch?v=3_Q-yYfjeBM">Youtube Video</a>
+				  <a class="alb_item" href="https://www.youtube.com/embed/3_Q-yYfjeBM?rel=0&amp;controls=0&amp;showinfo=0">Youtube Video</a>
 				  <a class="alb_item" href="//www.youtube.com/watch?v=Mlex28M-_Tk">Youtube Video</a>
 				  ...
 				</div>
@@ -160,7 +160,7 @@
 			<!-- sign up end  -->
 		</div>
 		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-		 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		 <script src="js/jquery-1.9.1.js"></script>
 
 		<script src="js/ALightBox.js"></script>
 
@@ -174,14 +174,10 @@
 			$('body').ALightBox({
 				showYoutubeThumbnails: true
 			});		
-
-
-			$( '#alb_icon_close').on('click', function() {
-	           	 // var url = $('.alb_item').attr('href');
-	           	 $('.alb_item').attr('href', '');
-	           	 // $('.alb_item').attr('href', url);
-
-	        });	
+			$("#alb_icon_close").click(function(){
+				$("#alb_content").children('iframe').attr("src", "");
+			});
+ 
 
 
 		
