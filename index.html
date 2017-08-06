@@ -25,10 +25,10 @@
 						<div class="siteLogin fr">
 							<ul>
 								<li class="dropdown">
-									<a href="javascript:void(0)" class="loginpanel">Login</a>
+									<a href="javascript:void(0)" class="loginpanel" id="login">Login</a>
 									<!-- log In end  -->
 								</li>
-								<li><a href="#" class="loginpanel">Signup</a></li>
+								<li><a href="#" class="loginpanel" id="signUp">Signup</a></li>
 							</ul>
 						</div>
 					</div>
@@ -37,7 +37,7 @@
 				<!-- container end -->
 			</div>
 			<div class="registerWrap dropdownMenu  clearfix" >
-				<div class="signIn registerContainer clearfix">
+				<div class=" registerContainer clearfix">
 					<h5 class="headH5">log in with</h5>
 					<div class="socialLogin fl">
 						<div class="btnBlock">
@@ -45,8 +45,11 @@
 							<input type="button" name="twitter" class="twitLogin loginbtn" value="Twitter">
 							<input type="button" name="gPlus" class="gPlusLogin loginbtn" value="Google">
 						</div>
-						
-						<p class="txtCopy mg15">New to DUD?  <a href="#" class="openLink ">Sign Up</a></p>
+
+						<p class="txtCopy showDiv">We will send verfication mail to user email id, once user approved the verfication he should get post login access.</p>
+
+						<p class="txtCopy signLink mg15">New to DUD?  <a href="#" class="openLink ">Sign Up</a></p>
+						<p class="txtCopy loginLink mgTop showDiv">Already a member?  <a href="#" class="openLink ">Login</a></p>
 					</div>
 					<div class="dividerBlock fl">
 						<div class="divider"></div>
@@ -54,9 +57,13 @@
 					</div>
 					<div class="emailLogin fr">
 						<form>
+							<input type="txt" name="name" placeholder="Full Name " class="inputy showDiv">
 							<input type="txt" name="email" placeholder="Email" class="inputy">
 							<input type="password" name="password" placeholder="Password" class="inputy">
-							<div class="clearfix mg15">
+							<div class="txtCopy mgtb showDiv">
+								<input type="checkbox" name="checkbox" class="check">	I have accepted the DUD <a href="#" class="openLink ">Terms & conditions</a>
+							</div>
+							<div class="fgPass clearfix mg15">
 								<input type="button" value="SIGN IN" class="btnSign fl">
 								<a href="#" class="openLink fr">Forgot the password?</a>
 							</div>
@@ -76,20 +83,28 @@
 			<!-- joinDud end -->
 
 
-			<section class="videoWrap clearfix">
+			<section class="videoWrap txt-center clearfix">
 
 				<h2 class="headH2 txt-center">FEATURED <span>VIDEOS</span></h2>
 
-				<style type="text/css">
-					.videoCnt img{width: 200px; height: auto}
-				</style>
-
-				<div class="videoCnt" data-title="Landscape">
-			
-				  <a class="alb_item" id="video1" href="//www.youtube.com/watch?v=T9kt9tqdAeo">Youtube Video</a>
-				  <a class="alb_item" href="https://www.youtube.com/embed/3_Q-yYfjeBM?rel=0&amp;controls=0&amp;showinfo=0">Youtube Video</a>
-				  <a class="alb_item" href="//www.youtube.com/watch?v=Mlex28M-_Tk">Youtube Video</a>
-				  ...
+				<div class="videoCnt" >
+					
+				  <div class="videoBlock">	
+				  	<a class="alb_item " href="https://www.youtube.com/watch?v=juFWl3vqsTQ"> </a>
+				  	<p class="videoTitle txt-left">Video 1</p>
+				  	<p class="videoDate txt-left">Date</p>
+				  </div>	
+				  <div class="videoBlock">		
+				  	<a class="alb_item " href="https://www.youtube.com/watch?v=p5xjLt_6hTc&list=PLY-3faJpM7ohX4YiYcgJdMt5_T-xmhKM8"></a>
+				  	<p class="videoTitle txt-left">Video 2</p>
+				  	<p class="videoDate txt-left">Date</p>				  	
+				  </div>
+				  <div class="videoBlock mgRightNone">	
+				  	<a class="alb_item " href="https://www.youtube.com/watch?v=C0e3GaQCPhc"></a>
+				  	<p class="videoTitle txt-left">Video 3</p>
+				  	<p class="videoDate txt-left">Date</p>				  	
+				  </div>
+				  
 				</div>
 
 			</section>
@@ -128,37 +143,10 @@
 				</div>
 			</div>
 			<!-- btmFooter end -->
-			<div class="registerWrap clearfix">
-				<div class="signUp registerContainer clearfix">
-					<h5 class="headH5">join today with</h5>
-					<div class="socialLogin fl">
-						<div class="btnBlock">
-							<input type="button" name="facebook" class="fbLogin loginbtn" value="Facebook">
-							<input type="button" name="twitter" class="twitLogin loginbtn" value="Twitter">
-							<input type="button" name="gPlus" class="gPlusLogin loginbtn" value="Google">
-						</div>
-						<p class="txtCopy">We will send verfication mail to user email id, once user approved the verfication he should get post login access.</p>
-						<p class="txtCopy mgTop">Already a member?  <a href="#" class="openLink ">Login</a></p>
-					</div>
-					<div class="dividerBlock fl">
-						<div class="divider"></div>
-						<span class="txt">Or</span>
-					</div>
-					<div class="emailLogin fr">
-						<form>
-							<input type="txt" name="name" placeholder="Full Name" class="inputy">
-							<input type="txt" name="email" placeholder="Email" class="inputy">
-							<input type="password" name="password" placeholder="Password" class="inputy">
-							<div class="txtCopy mgtb">
-								<input type="checkbox" name="checkbox" class="check">	I have accepted the DUD <a href="#" class="openLink ">Terms & conditions</a>
-							</div>
-							<input type="button" value="SIGN UP" class="btnSign ">
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- sign up end  -->
+
 		</div>
+
+
 		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 		 <script src="js/jquery-1.9.1.js"></script>
 
@@ -168,19 +156,37 @@
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$(".loginpanel").on("click",function(){
-				$(".dropdownMenu").show().animate({top: "110px"});
+				$(".dropdownMenu").show().animate({top: "107px"});
 			});
 
 			$('body').ALightBox({
-				showYoutubeThumbnails: true
-			});		
+				showYoutubeThumbnails: true,
+			});	
+
 			$("#alb_icon_close").click(function(){
 				$("#alb_content").children('iframe').attr("src", "");
 			});
  
 
 
-		
+			$("#signUp").click(function(){
+		        $(".showDiv").show();
+		        $(".signLink, .fgPass .openLink").hide();
+		        $(".registerContainer .headH5").text("JOIN TODAY WITH");
+		        $(".btnSign").val('sign up');
+		        $(".dividerBlock .divider").css({"height": 235, "transition": "all 0.5s ease"});
+
+		    });
+
+			$("#login").click(function(){
+		        $(".showDiv").hide();
+		        $(".signLink, .fgPass .openLink").show();
+		        $(".registerContainer .headH5").text("log in with");
+		        $(".btnSign").val('sign in');
+		        $(".dividerBlock .divider").css({"height": 150, "transition": "all 0.5s ease"}); 
+
+		    });
+
 
 
 		});

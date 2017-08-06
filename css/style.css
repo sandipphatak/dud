@@ -59,11 +59,10 @@ select:-webkit-autofill, input:-webkit-autofill {
 .container{width: 1168px; margin:0 auto;}
 .containerMd{width: 1090px;margin: 0 auto}
 
-
 .dropdownMenu{width: 100%;top:-194px;position: absolute; display: none; z-index: 0}
 
-.hidden{display: none}
-
+.hidden{display: none;}
+.showDiv{-webkit-transition: all 2s ease ; transition: all 2s ease ;display: none;}
 
 /*********common css***********/
 .col-1 {width: 8.33%;}
@@ -88,6 +87,18 @@ select:-webkit-autofill, input:-webkit-autofill {
 .marg-t-20 { margin-top: 42px }
 .pad-0 { padding: 0; }
 /**********/
+
+
+/*----- video css start --------*/
+.videoWrap{padding:80px 0;}
+.videoWrap .headH2{margin-bottom: 30px}
+.videoWrap .videoCnt .videoBlock{width: 375px; height: auto;display: inline-block;
+margin: 20px 20px 0 0;color: #606060;}
+.videoWrap .videoCnt .alb_item.mgRightNone{margin-right: none}
+.videoWrap .videoCnt .videoBlock .videoTitle{font-size: 18px;margin-top: 20px;font-weight: 700 }
+.videoWrap .videoCnt .videoBlock .videoDate{font-size: 14px; }
+/*----- video css end --------*/
+
 /***************/
 
 /*---------------header css start-------------------*/
@@ -99,13 +110,13 @@ select:-webkit-autofill, input:-webkit-autofill {
 .headWrap .dropdown .arrowup {width: 0;height: 0;border-left: 6px solid transparent;border-right: 6px solid transparent; border-bottom: 6px solid #3b2f43;margin: 0 auto;}
 
 .registerWrap{background: #374785;padding: 55px 0;}
-.registerWrap .registerContainer{ width: 570px; margin:0 auto}
+.registerWrap .registerContainer{ width: 570px; margin:0 auto; }
 .registerWrap .registerContainer .headH5{margin-bottom: 25px;color: #fff;font-size: 18px; font-weight: 900; text-transform: uppercase;}
 .registerWrap .registerContainer .mgtb{margin:13px 0 20px;}
 .registerWrap .registerContainer .mg15{margin-top: 15px}
 .registerWrap .registerContainer .txtCopy{font-size: 14px;font-weight: 300 }
 .registerWrap .registerContainer .openLink{color: #91b5d3;margin-left: 5px; text-decoration: underline;font-size: 14px}
-.registerWrap .registerContainer .btnSign{padding: 20px;background: #1b1d24 ;font-weight: 700;color: #fff;padding: 12px 32px}
+.registerWrap .registerContainer .btnSign{text-transform:uppercase;padding: 20px;background: #1b1d24 ;font-weight: 700;color: #fff;padding: 12px 32px}
 .registerWrap .registerContainer .socialLogin{width: 200px}
 .registerWrap .registerContainer .socialLogin .loginbtn{color: #fff;font-size: 14px; width: 100%;height: 30px;font-weight: 700;margin-bottom: 8px;}
 .registerWrap .registerContainer .socialLogin .fbLogin{background: #496fb2 url(../images/regifb.png) no-repeat 16px center;}
@@ -113,7 +124,7 @@ select:-webkit-autofill, input:-webkit-autofill {
 .registerWrap .registerContainer .socialLogin .gPlusLogin{background: #ef5b49 url(../images/regiplus.png) no-repeat 12px center;}
 .registerWrap .registerContainer .socialLogin .mgTop{margin-top:35px }
 .registerWrap .registerContainer .dividerBlock{width: 40px;position: relative;margin: 0 0 0 20px}
-.registerWrap .registerContainer .dividerBlock .divider{height:240px ;width: 1px; background: #8db1d0; margin:0 auto;}
+.registerWrap .registerContainer .dividerBlock .divider{width: 1px; background: #8db1d0; margin:0 auto;}
 .registerWrap .registerContainer .dividerBlock .txt{color: #a8d1e7; font-size:14px; font-weight: 900;background: #374785;padding: 7px;left: 3px;top: 50%;position: absolute;margin-top: -12px;  }
 
 
@@ -121,7 +132,6 @@ select:-webkit-autofill, input:-webkit-autofill {
 .registerWrap .registerContainer .emailLogin .inputy{width: 91%;border:1px solid #fff;font-size:14px; color: #fff;height: 30px; line-height: 30px;background: none;margin-bottom: 8px;padding: 0 4%}
 .registerWrap .registerContainer .emailLogin .check{position: relative;top:2px;margin-right: 4px}
 
-.registerWrap .signIn.registerContainer .dividerBlock .divider{height: 140px}
 .registerWrap .signIn.registerContainer .dividerBlock .txt{margin-top: -21px;}
 /*---------------header css end-------------------*/
 
