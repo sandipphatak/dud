@@ -57,7 +57,7 @@ select:-webkit-autofill, input:-webkit-autofill {
 
 
 .container{width: 1168px; margin:0 auto;}
-.containerMd{width: 1090px;margin: 0 assuto}
+.containerMd{width: 1090px;margin: 0 auto}
 
 
 .dropdownMenu{width: 100%;top:-194px;position: absolute; display: none; z-index: 0}
