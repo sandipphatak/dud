@@ -1,0 +1,34 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>jQuery ALightBox Plugin Example</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<link rel="stylesheet" href="./src/ALightBox.css">
+		<style media="screen">
+			.t img {
+				width: 200px;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>jQuery ALightBox Plugin Example</h1>
+		<div data-title="Landscape" class="t">
+			<img class="alb_item" src="https://unsplash.it/600/400/?random"/>
+			<img class="alb_item" src="https://unsplash.it/700/400/?random"/>
+			<img class="alb_item" src="https://unsplash.it/1200/800/?random"/>
+			<a class="alb_item" href="https://www.youtube.com/watch?v=T9kt9tqdAeo">Youtube 1</a>
+          <a class="alb_item" href="https://www.youtube.com/watch?v=Llw7cXHmDDo">Youtube 2</a>
+          <a class="alb_item" href="https://www.youtube.com/watch?v=BXr1GZxVZt0">Youtube 3</a>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="./src/ALightBox.js"></script>
+		<script type="text/javascript">
+			$('body').ALightBox({
+				showYoutubeThumbnails: true
+			});
+		</script>
+
+	</body>
+</html>
