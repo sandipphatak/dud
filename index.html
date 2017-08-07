@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900,900i" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/ALightBox.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
 	</head>
 	<body>
 		
@@ -28,7 +29,7 @@
 									<a href="javascript:void(0)" class="loginpanel" id="login">Login</a>
 									<!-- log In end  -->
 								</li>
-								<li><a href="#" class="loginpanel" id="signUp">Signup</a></li>
+								<li><a href="javascript:void(0)" class="loginpanel" id="signUp">Signup</a></li>
 							</ul>
 						</div>
 					</div>
@@ -45,9 +46,7 @@
 							<input type="button" name="twitter" class="twitLogin loginbtn" value="Twitter">
 							<input type="button" name="gPlus" class="gPlusLogin loginbtn" value="Google">
 						</div>
-
 						<p class="txtCopy showDiv">We will send verfication mail to user email id, once user approved the verfication he should get post login access.</p>
-
 						<p class="txtCopy signLink mg15">New to DUD?  <a href="#" class="openLink ">Sign Up</a></p>
 						<p class="txtCopy loginLink mgTop showDiv">Already a member?  <a href="#" class="openLink ">Login</a></p>
 					</div>
@@ -74,6 +73,12 @@
 			
 			<!-- headWrap end -->
 			<div class="homeBaner">
+				<ul class="bxslider">
+					<li>
+						<img src="images/slider1.jpg" />
+					</li>
+					
+				</ul>
 			</div>
 			<!-- homeBaner end -->
 			<div class="joinDud txt-center">
@@ -81,36 +86,28 @@
 				<div><a href="#" class="jNow">Join Now</a></div>
 			</div>
 			<!-- joinDud end -->
-
-
 			<section class="videoWrap txt-center clearfix">
-
 				<h2 class="headH2 txt-center">FEATURED <span>VIDEOS</span></h2>
-
 				<div class="videoCnt" >
 					
-				  <div class="videoBlock">	
-				  	<a class="alb_item " href="https://www.youtube.com/watch?v=juFWl3vqsTQ"> </a>
-				  	<p class="videoTitle txt-left">Video 1</p>
-				  	<p class="videoDate txt-left">Date</p>
-				  </div>	
-				  <div class="videoBlock">		
-				  	<a class="alb_item " href="https://www.youtube.com/watch?v=p5xjLt_6hTc&list=PLY-3faJpM7ohX4YiYcgJdMt5_T-xmhKM8"></a>
-				  	<p class="videoTitle txt-left">Video 2</p>
-				  	<p class="videoDate txt-left">Date</p>				  	
-				  </div>
-				  <div class="videoBlock mgRightNone">	
-				  	<a class="alb_item " href="https://www.youtube.com/watch?v=C0e3GaQCPhc"></a>
-				  	<p class="videoTitle txt-left">Video 3</p>
-				  	<p class="videoDate txt-left">Date</p>				  	
-				  </div>
-				  
+					<div class="videoBlock">
+						<a class="alb_item " href="https://www.youtube.com/watch?v=juFWl3vqsTQ"> </a>
+						<p class="videoTitle txt-left">Video 1</p>
+						<p class="videoDate txt-left">Date</p>
+					</div>
+					<div class="videoBlock">
+						<a class="alb_item " href="https://www.youtube.com/watch?v=p5xjLt_6hTc&list=PLY-3faJpM7ohX4YiYcgJdMt5_T-xmhKM8"></a>
+						<p class="videoTitle txt-left">Video 2</p>
+						<p class="videoDate txt-left">Date</p>
+					</div>
+					<div class="videoBlock mgRightNone">
+						<a class="alb_item " href="https://www.youtube.com/watch?v=C0e3GaQCPhc"></a>
+						<p class="videoTitle txt-left">Video 3</p>
+						<p class="videoDate txt-left">Date</p>
+					</div>
+					
 				</div>
-
 			</section>
-
-
-
 			<div class="footerWrap clearfix">
 				<div class="containerMd clearfix">
 					<div class="footerLogo fl">
@@ -143,55 +140,19 @@
 				</div>
 			</div>
 			<!-- btmFooter end -->
-
 		</div>
-
-
 		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-		 <script src="js/jquery-1.9.1.js"></script>
-
+		<script src="js/jquery-1.9.1.min.js"></script>
 		<script src="js/ALightBox.js"></script>
-
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/custom.js"></script>
 
 		<script type="text/javascript">
-		$(document).ready(function(){
-			$(".loginpanel").on("click",function(){
-				$(".dropdownMenu").show().animate({top: "107px"});
-			});
 
-			$('body').ALightBox({
-				showYoutubeThumbnails: true,
-			});	
-
-			$("#alb_icon_close").click(function(){
-				$("#alb_content").children('iframe').attr("src", "");
-			});
- 
-
-
-			$("#signUp").click(function(){
-		        $(".showDiv").show();
-		        $(".signLink, .fgPass .openLink").hide();
-		        $(".registerContainer .headH5").text("JOIN TODAY WITH");
-		        $(".btnSign").val('sign up');
-		        $(".dividerBlock .divider").css({"height": 235, "transition": "all 0.5s ease"});
-
-		    });
-
-			$("#login").click(function(){
-		        $(".showDiv").hide();
-		        $(".signLink, .fgPass .openLink").show();
-		        $(".registerContainer .headH5").text("log in with");
-		        $(".btnSign").val('sign in');
-		        $(".dividerBlock .divider").css({"height": 150, "transition": "all 0.5s ease"}); 
-
-		    });
-
-
-
+		$(document).ready(function(){		
+			$('.bxslider').bxSlider();			
 		});
 		</script>
-
 		
 	</body>
 </html>

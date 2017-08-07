@@ -48,7 +48,7 @@
 				var videoID = $(items[i]).attr('href').match(/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/)[2];
 
 				$(items[i]).html(`<img src="https://i.ytimg.com/vi/${videoID}/maxresdefault.jpg"/>`)
-				$('#alb_content').html(`<iframe src="https://www.youtube.com/embed/${videoID}?badge=0&html5=1" width="1280" height="720" frameborder="0" allowfullscreen></iframe>`);
+				$('#alb_content').html(`<iframe src="https://www.youtube.com/embed/${videoID}?badge=0&html5=1" width="900" height="720" frameborder="0" allowfullscreen></iframe>`);
 			}
 		}
 
@@ -57,7 +57,7 @@
 
 		function Open(obj) {
 			galleryTitle = obj.parent().data('title');
-			index = $(obj).parent().children(itemSelector).index(obj);
+			index = $(obj).parents().find(".videoBlock").children(itemSelector).index(obj);
 
 			Update();
 			$('#alb_overlay').fadeIn(settings.effectTime);
@@ -109,7 +109,7 @@
 
 			if(tag == 'a') {
 				var videoID = $(item).attr('href').match(/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/)[2];
-				$('#alb_content').html(`<iframe src="https://www.youtube.com/embed/${videoID}?badge=0&html5=1" width="1280" height="720" frameborder="0" allowfullscreen></iframe>`);
+				$('#alb_content').html(`<iframe src="https://www.youtube.com/embed/${videoID}?badge=0&html5=1" width="900" height="720" frameborder="0" allowfullscreen></iframe>`);
 			}
 			else if(tag == 'img') {
 				$('#alb_content').html(`<img src="${$(item).attr('src')}"/>`);

@@ -49,7 +49,7 @@ select:-webkit-autofill, input:-webkit-autofill {
 .txt-center{text-align: center}
 .headH1{color: #fff; font-size: 60px;font-weight: 900}
 .headH1 span{font-weight: 400}
-.headH2{color: #606060;font-weight: 900}
+.headH2{color: #606060;font-weight: 900;}
 .headH2 span{font-weight: 400}  
 .mgZero{margin:0 !important }
 
@@ -59,7 +59,7 @@ select:-webkit-autofill, input:-webkit-autofill {
 .container{width: 1168px; margin:0 auto;}
 .containerMd{width: 1090px;margin: 0 auto}
 
-.dropdownMenu{width: 100%;top:-194px;position: absolute; display: none; z-index: 0}
+.dropdownMenu{width: 100%;top:-194px;position: absolute; display: none; z-index: 1}
 
 .hidden{display: none;}
 .showDiv{-webkit-transition: all 2s ease ; transition: all 2s ease ;display: none;}
@@ -97,12 +97,13 @@ margin: 20px 20px 0 0;color: #606060;}
 .videoWrap .videoCnt .alb_item.mgRightNone{margin-right: none}
 .videoWrap .videoCnt .videoBlock .videoTitle{font-size: 18px;margin-top: 20px;font-weight: 700 }
 .videoWrap .videoCnt .videoBlock .videoDate{font-size: 14px; }
+.videoWrap .headH2 {font-size: 36px;}
 /*----- video css end --------*/
 
 /***************/
 
 /*---------------header css start-------------------*/
-.headWrap{background: #fff; width: 100%;z-index: 1; position: relative;}
+.headWrap{background: #fff; width: 100%;z-index: 2; position: relative;}
 .headWrap .header .logo img{display: block;margin-top: 18px}
 .headWrap .header li{float: left;position: relative;}
 .headWrap .header li a{color:#1b1d24; font-size: 19px;text-transform: uppercase;font-weight: 700;display: block;padding:43px 25px;}
@@ -135,15 +136,19 @@ margin: 20px 20px 0 0;color: #606060;}
 .registerWrap .signIn.registerContainer .dividerBlock .txt{margin-top: -21px;}
 /*---------------header css end-------------------*/
 
-.homeBaner{background: url(../images/homemainbg.jpg) no-repeat top center;height: 100vh; background-size: cover}
+/*.homeBaner{background: url(../images/homemainbg.jpg) no-repeat top center; height: 100vh; background-size: cover}*/
 
-.joinDud{background: #1b1d24; text-transform: uppercase;padding: 90px 0}
-.jNow{font-size: 20px;color: #fff;background: #e32b45;width: 190px;height: 50px;line-height: 50px; margin: 35px auto 0;display: block;font-weight: 700}
+.joinDud{background: #1b1d24; text-transform: uppercase;padding: 90px 0;}
+.jNow{font-size: 20px;color: #fff;background: #e32b45;width: 190px;height: 50px;line-height: 50px; 
+  margin: 35px auto 0;display: block;font-weight: 700}
 
 
 
 
 /*-----sameer------*/
+  /******homepage***/
+  .slider1 {background: url(../images/homemainbg.jpg) no-repeat top center; height: 100vh; background-size: cover  }
+
   /*--blog--*/
   .tablist { float: left; margin-top: 12px}
   .tablist li { display: inline-block; padding: 0 10px 0 0;}
