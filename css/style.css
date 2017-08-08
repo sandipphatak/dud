@@ -77,7 +77,7 @@ select:-webkit-autofill, input:-webkit-autofill {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-[class*="col-"] {float: left; padding: 0 15px; border: 1px solid red}
+[class*="col-"] {float: left; padding: 0 15px; }
 .row::after {content: "";clear: both; display: table;}
 
 /***button css***/
@@ -150,34 +150,32 @@ margin: 20px 20px 0 0;color: #606060;}
   .slider1 {background: url(../images/homemainbg.jpg) no-repeat top center; height: 100vh; background-size: cover  }
 
   /*--blog--*/
-  .tablist { float: left; margin-top: 12px}
+  .tabpanel { margin-top: 15px }
+  .tablist { float: left; margin-top: 0px}
   .tablist li { display: inline-block; padding: 0 10px 0 0;}
   .tablist li a { font-weight: 400; font-size: 14px; text-transform: uppercase; color: #1b1d24;transition: .5s ease all}
   .tablist li a:hover, .tablist li a.active { border-bottom: 1px solid #000; padding-bottom: 5px  }
   .crsl-items{margin: 30px auto;}
-  .crsl-item figcaption{ 
-    position: absolute;
-    bottom: 4px;
-    left: 0;
-    width: 98.9%;
-    padding: 10px;
-    color: #FFF;
+  .crsl-item figcaption{    position: absolute;bottom: 4px;left: 0; width: 98.9%; padding: 10px;color: #FFF;
     background: rgba(20,22,29,.5); padding:20px; color: #6d6d6e; font-size: 14px; font-weight: 700}
   .blogmsg { display: block; text-transform: uppercase; color: #fff; font-size: 18px; margin-bottom: 10px }
-  .crsl-nav{position: relative;min-height: 1px;display: block!important; margin-right: 7px; float: right;}
+  .crsl-nav{position: relative;min-height: 1px;display: block!important; margin-right: 7px; float: right;    margin-bottom: 13px;}
   .crsl-nav .previous, .crsl-nav .next{float: right; background: url(../images/prev.jpg) no-repeat 0; text-indent: -70px;
-    overflow: hidden; width: 32px; height: 52px;}
-  .crsl-nav .next{float: right; background: url(../images/next.jpg) no-repeat 0; }
-  .advbg { background: url(../images/adbg.jpg) no-repeat 0 0; background-size: cover; }
+    overflow: hidden; width: 32px; height: 33px;}
+  .crsl-nav .next{float: right; background: url(../images/prev.jpg) no-repeat 0;  border-right: 1px solid black;  
+     transform: rotate(180deg); }
+  .advbg { background: url(../images/adbg1.jpg) no-repeat 0 0; background-size: cover; }
   .pad-tb-20 { padding: 64px 0}
   .bgGray { background: #b0b1b7; }
   .heading_h5, .heading_h6 {font-size: 18px;
     color: #1b1d24;
     font-weight: 700;
-    text-transform: uppercase; margin-top: 8px;
+    text-transform: uppercase;
   }
     .heading_h6 { font-size: 14px; margin-top: 6px; }
     .newscopy { font-size: 14px;font-weight: 400; color: #1b1d24; margin-top: 19px; line-height: 20px}
+    .blogrow .col-4 { width: 33.32%;}
+    .relatedarticles .col-4 {width: 33.30%; padding-left: 0!important;}
 
 /*******article page***/
 .articlepanel { margin-top: 25px; }
@@ -187,7 +185,7 @@ margin: 20px 20px 0 0;color: #606060;}
   .date { font-size: 18px; color: #ababab; font-weight: 700;line-height: 18px;margin-top: 10px;}
   .articlecopy { font-size: 14px; font-weight: 400; color: #1b1d24; line-height: 18px; margin: 30px 0; }
   .articlevideo { width: 100%; }
-  .articleall { margin-top: 15px; }
+  .articleall { margin: 15px 0 45px; }
   .arelatehead { color: #1b1d24; font-weight: 900; font-size: 36px;  }
   .blackhr { width: 100%; border-bottom: 1px solid #1b1d24; margin: 15px 0 }
 /***********/
