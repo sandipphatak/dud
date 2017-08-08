@@ -19,7 +19,6 @@ input[type="submit"] {
      border-radius: 0;
      outline: 0;
      background: none;
-     border: 0
 } 
 button { border: 0; cursor: pointer; }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -82,6 +81,7 @@ select:-webkit-autofill, input:-webkit-autofill {
 
 /***button css***/
 .btn-black { background: #1b1d24; color: #fff; font-weight: 700; font-size: 20px; padding: 15px 35px;}
+.btn-red { background: #e32b45; padding: 10px 20px; color: #fff }
 
 /*******margins****/
 .marg-t-20 { margin-top: 42px }
@@ -167,12 +167,8 @@ margin: 20px 20px 0 0;color: #606060;}
   .advbg { background: url(../images/adbg1.jpg) no-repeat 0 0; background-size: cover; }
   .pad-tb-20 { padding: 64px 0}
   .bgGray { background: #b0b1b7; }
-  .heading_h5, .heading_h6 {font-size: 18px;
-    color: #1b1d24;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-    .heading_h6 { font-size: 14px; margin-top: 6px; }
+  .heading_h5, .heading_h6 {font-size: 18px; color: #1b1d24; font-weight: 700; text-transform: uppercase;}
+    .heading_h6 { font-size: 14px; margin-top: 6px;}
     .newscopy { font-size: 14px;font-weight: 400; color: #1b1d24; margin-top: 19px; line-height: 20px}
     .blogrow .col-4 { width: 33.32%;}
     .relatedarticles .col-4 {width: 33.30%; padding-left: 0!important;}
@@ -183,11 +179,17 @@ margin: 20px 20px 0 0;color: #606060;}
   .articlepage {margin: 20px 0; }
   .heading-h1 {text-transform: uppercase;line-height: 38px; font-size: 36px; font-weight: 900;  color:#1b1d24;  }
   .date { font-size: 18px; color: #ababab; font-weight: 700;line-height: 18px;margin-top: 10px;}
-  .articlecopy { font-size: 14px; font-weight: 400; color: #1b1d24; line-height: 18px; margin: 30px 0; }
+  .articlecopy { font-size: 14px; font-weight: 400; color: #1b1d24; line-height: 18px; margin: 15px 0; }
   .articlevideo { width: 100%; }
   .articleall { margin: 15px 0 45px; }
   .arelatehead { color: #1b1d24; font-weight: 900; font-size: 36px;  }
   .blackhr { width: 100%; border-bottom: 1px solid #1b1d24; margin: 15px 0 }
+  .emailsubpanel { width: 100%; background: #1b1d24; padding:25px; }
+   .emailsubpanel .heading_h5 { color: #fff }
+   .emailsubpanel .articlecopy { color: #fff }
+   .esubfield {width: 91%;  border: 1px solid #fff; font-size: 14px; color: #fff; line-height: 36px;
+    background: none; margin-bottom: 8px; padding: 0 4%;margin: 5px 0 30px;}
+  
 /***********/
     
 
