@@ -25,6 +25,7 @@ $(document).ready(function(){
 				$(".btnSign").val('sign in');
 				$(".dividerBlock .divider").css({"height": 150, "transition": "all 0.5s ease"});
 			});
+
 			
 
 

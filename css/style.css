@@ -174,8 +174,9 @@ margin: 20px 20px 0 0;color: #606060;}
     .relatedarticles .col-4 {width: 33.30%; padding-left: 0!important;}
 
 /*******article page***/
-.articlepanel { margin-top: 25px; }
-  .apic {}
+.articlepanel { margin-top: 25px;}
+.leftpanel {  width: 768px; float: left; }
+.rightpanel { float: right; width: 370px; }
   .articlepage {margin: 20px 0; }
   .heading-h1 {text-transform: uppercase;line-height: 38px; font-size: 36px; font-weight: 900;  color:#1b1d24;  }
   .date { font-size: 18px; color: #ababab; font-weight: 700;line-height: 18px;margin-top: 10px;}
@@ -189,6 +190,30 @@ margin: 20px 20px 0 0;color: #606060;}
    .emailsubpanel .articlecopy { color: #fff }
    .esubfield {width: 91%;  border: 1px solid #fff; font-size: 14px; color: #fff; line-height: 36px;
     background: none; margin-bottom: 8px; padding: 0 4%;margin: 5px 0 30px;}
+    .newslist {margin-top: 25px}
+    .listtab li a { background: #374785; padding: 14px 0px; float: left; color: #fff; width:123px; font-size: 16px;
+    text-align: center; transition: .5s ease all; font-weight: 400}
+    .listtab li a:hover { background: #1b1d24 }
+    .listtab li.active a  { background: #edf0f3; color: #1b1d24; }
+    .newslistpanel { background: #edf0f3; padding: 20px 28px;; width: 100%}
+    .trendingnewlist li { width: 100%; margin-bottom: 30px;  }
+    .trendingnewlist li:last-child { margin-bottom: 0 }
+    .trendingnewlist li .heading_h5 { margin-top: 10px }
+    .socialpanel { margin-top: 35px; }
+    .socialpanel .arelatehead { font-size: 18px; font-weight: 700; }
+    .facebooklogo { background: url(../images/facebookicon.png) no-repeat  0 0; width: 19px; height: 27px; display: inline-block;
+    margin-right: 20px; }
+    .instagram { background: url(../images/instagramicon.png) no-repeat  0 0; width: 26px; height: 27px; 
+      display: inline-block;  margin-right: 20px; }
+    .twitter {background: url(../images/twittericon.png) no-repeat  0 0; width: 29px; height: 27px; display: inline-block;
+    margin-right: 20px; }
+    .youtube {background: url(../images/youtubeicon.png) no-repeat  0 0; width: 32px; height: 27px; display: inline-block;
+    margin-right: 20px; }
+    .instagrampanel { margin-top: 35px }
+    .socialicon a { display: inline-block; margin-right: 9px }
+    .socialicon a.last { margin-right: 0 }
+    .footerwithtxt { margin-top:55px }
+
   
 /***********/
     
