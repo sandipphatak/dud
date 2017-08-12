@@ -256,7 +256,7 @@ margin: 20px 20px 0 0;color: #606060;}
 .abtVideoWrap .txtBlock p{font-size: 14px;line-height: 20px}
 .abtVideoWrap .videoBlock{width: 767px}
 
-.abtWrap .colhalf{width: 46%; font-size: 14px; }
+.abtWrap .colhalf{width: 47%; font-size: 14px; }
 .abtWrap .colhalf p{ line-height: 21px}
 /*------ visionBlock start ----------*/
 .visionWrap{color: #1b1d24;padding-bottom: 100px}
@@ -267,9 +267,9 @@ margin: 20px 20px 0 0;color: #606060;}
 
 /*------ ourTeam start ----------*/
 .ourTeam .teamMember {margin-top: 50px}
-.ourTeam .teamMember li{display:inline-block;width: 12.5%; margin-left: 6%;}
+.ourTeam .teamMember li{display:inline-block;width: 12.5%; margin-left: 4.7%;}
 .ourTeam .teamMember li:first-child{margin-left: 0}
-.ourTeam .teamMember li .designation{color: #1b1d24;text-align: center;margin-top: 20px}
+.ourTeam .teamMember li .designation{color: #1b1d24;text-align: center;margin-top: 20px;font-weight: bold;}
 /*------- ourTeam end --------------*/
 
 /*------- sponserUs end --------------*/
