@@ -5,7 +5,7 @@ $(document).ready(function(){
 			});
 			$('body').ALightBox({
 				showYoutubeThumbnails: true,
-				});
+			});
 			$("#alb_icon_close").click(function(){
 				$("#alb_content").children('iframe').attr("src", "");
 			});
