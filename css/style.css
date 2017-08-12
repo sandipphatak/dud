@@ -5,7 +5,7 @@
 .clearfix:after {clear: both}
 .clearfix {zoom: 1}
 html{height: 100%}
-body{-webkit-text-size-adjust:100%;font-family: 'Lato', sans-serif, arial; font-size:18px;color: #fff;  }
+body{-webkit-text-size-adjust:100%;font-family: 'Lato', sans-serif, arial; font-size:18px;color: #ffffff;  }
 li{list-style: none;}
 a{text-decoration: none; outline: none}
 a:hover{cursor: pointer}
@@ -19,6 +19,7 @@ input[type="submit"] {
      border-radius: 0;
      outline: 0;
      background: none;
+     border: 0;
 } 
 button { border: 0; cursor: pointer; }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -46,16 +47,27 @@ select:-webkit-autofill, input:-webkit-autofill {
 .txt-left{text-align: left}
 .txt-right{text-align: right}
 .txt-center{text-align: center}
+.txt-uppercase{text-transform: uppercase;}
+
 .headH1{color: #fff; font-size: 60px;font-weight: 900}
 .headH1 span{font-weight: 400}
-.headH2{color: #606060;font-weight: 900;}
+.headH2{color: #1b1d24;font-weight: 900;font-size: 36px;}
 .headH2 span{font-weight: 400}  
+.headH6{color: #1b1d24;font-size: 18px}
 .mgZero{margin:0 !important }
+.paddTopBtm {padding: 100px 0}
+.mgTop100{margin-top: 100px}
+.mgBtm50{margin-bottom: 50px}
+.mgTop50{margin-top: 50px}
+.width100{width: 100%}
+.txtcopy{font-size: 14px;line-height: 20px;color: #1b1d24}
 
+
+.btnPrimary{background: #e32b45;padding: 15px 20px;color: #ffffff;display: inline-block;}
 /*******************/
 
 
-.container{width: 1168px; margin:0 auto;}
+.container{width: 1168px; margin:0 auto;position: relative;}
 .containerMd{width: 1090px;margin: 0 auto}
 
 .dropdownMenu{width: 100%;top:-194px;position: absolute; display: none; z-index: 1}
@@ -97,7 +109,7 @@ margin: 20px 20px 0 0;color: #606060;}
 .videoWrap .videoCnt .alb_item.mgRightNone{margin-right: none}
 .videoWrap .videoCnt .videoBlock .videoTitle{font-size: 18px;margin-top: 20px;font-weight: 700 }
 .videoWrap .videoCnt .videoBlock .videoDate{font-size: 14px; }
-.videoWrap .headH2 {font-size: 36px;}
+
 /*----- video css end --------*/
 
 /***************/
@@ -143,8 +155,6 @@ margin: 20px 20px 0 0;color: #606060;}
   margin: 35px auto 0;display: block;font-weight: 700}
 
 
-
-
 /*-----sameer------*/
   /******homepage***/
   .slider1 {background: url(../images/homemainbg.jpg) no-repeat top center; height: 100vh; background-size: cover  }
@@ -175,7 +185,6 @@ margin: 20px 20px 0 0;color: #606060;}
 
 /*******article page***/
 .articlepanel { margin-top: 25px; }
-  .apic {}
   .articlepage {margin: 20px 0; }
   .heading-h1 {text-transform: uppercase;line-height: 38px; font-size: 36px; font-weight: 900;  color:#1b1d24;  }
   .date { font-size: 18px; color: #ababab; font-weight: 700;line-height: 18px;margin-top: 10px;}
@@ -194,6 +203,57 @@ margin: 20px 20px 0 0;color: #606060;}
     
 
 /*-----end sameer------*/
+
+/*----- about us css start -------*/
+
+.abtVideoWrap{height: 100vh;background: url(../images/abtmainbg.jpg)  no-repeat  center/cover;position: relative;margin-top: -110px;}
+.abtVideoWrap .abtVideo { position: absolute;top: 50%;margin-top: 80px;left: 0;width: 100%;margin-top: 130px;}
+.abtVideoWrap .txtBlock{width: 316px;}
+.abtVideoWrap .txtBlock .vTitle{font-size: 36px;margin-bottom: 55px}
+.abtVideoWrap .txtBlock p{font-size: 14px;line-height: 20px}
+.abtVideoWrap .videoBlock{width: 767px}
+
+.abtWrap .colhalf{width: 46%; font-size: 14px; }
+.abtWrap .colhalf p{ line-height: 21px}
+/*------ visionBlock start ----------*/
+.visionWrap{color: #1b1d24;padding-bottom: 100px}
+.visionWrap .headH2{margin-bottom:100px;}
+.visionWrap .headH6{margin-bottom: 20px}
+
+/*------- visionBlock end --------------*/
+
+/*------ ourTeam start ----------*/
+.ourTeam .teamMember {margin-top: 50px}
+.ourTeam .teamMember li{display:inline-block;width: 12%; margin-left: 9%;}
+.ourTeam .teamMember li:first-child{margin-left: 0}
+.ourTeam .teamMember li .designation{color: #1b1d24;text-align: center;margin-top: 20px}
+/*------- ourTeam end --------------*/
+
+/*------- sponserUs end --------------*/
+.sponserUs{background: url(../images/sponserBg.jpg) no-repeat center;}
+.sponserUs .headH2{color: #ffffff}
+.sponserUs .sponserBtn{text-transform: uppercase;background: #374785;color: #ffffff;font-size: 20px;padding: 10px 30px ;display: inline-block;}
+/*------- sponserUs end --------------*/
+
+/*----- Numbers css start ---------*/
+.dudNumbers .bg1{background: #374785}
+.dudNumbers .bg2{background: #e32b45}
+.dudNumbers .bg3{background: #a8d1e7}
+.dudNumbers .numBoxWrap{width: 192px;height: 192px;display: table;}
+.dudNumbers .numWrap{display: table-cell;vertical-align: middle;}
+.dudNumbers .numWrap .headH2, .dudNumbers .numWrap p{color: #ffffff;}
+.dudNumbers .dudNumList li{width: 16.5%;display: inline-block;margin-left: 4%}
+.dudNumbers .dudNumList li:first-child{margin-left: 0}
+.dudNumbers .dudNumList .titleTxt{text-transform: uppercase;color: #1b1d24;margin: 35px 0 15px;font-weight: bold;}
+/*----- Numbers css end ---------*/
+
+.season2{background: url(../images/season2bg.jpg) no-repeat center;}
+
+/*---------- about us css end ------------*/
+
+
+
+
 
 /*---------------footer css start-------------------*/
 .footerWrap{background: #374785;padding: 60px 0}
