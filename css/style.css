@@ -194,15 +194,11 @@ margin: 20px 20px 0 0;color: #606060;}
 
 
 /*******article page***/
-<<<<<<< HEAD
-.articlepanel { margin-top: 25px; }
-  .articlepage {margin: 20px 0; }
-=======
+
 .articlepanel { margin-top: 25px;}
 .leftpanel {  width: 768px; float: left; }
 .rightpanel { float: right; width: 370px; }
   .articlepage {margin:50px 0; }
->>>>>>> 27a43935c45d069db570ac83a6b581a0e6524820
   .heading-h1 {text-transform: uppercase;line-height: 38px; font-size: 36px; font-weight: 900;  color:#1b1d24;  }
   .date { font-size: 18px; color: #ababab; font-weight: 700;line-height: 18px;margin-top: 10px;}
   .articlecopy { font-size: 14px; font-weight: 400; color: #1b1d24; line-height: 21px; margin: 35px 0; }
@@ -247,9 +243,9 @@ margin: 20px 20px 0 0;color: #606060;}
 
 /*----- about us css start -------*/
 
-.abtVideoWrap{height: 100vh;background: url(../images/abtmainbg.jpg)  no-repeat  center/cover;position: relative;margin-top: -110px;}
-.abtVideoWrap .abtVideo { position: absolute;top: 50%;margin-top: 80px;left: 0;width: 100%;margin-top: 130px;}
-.abtVideoWrap .txtBlock{width: 316px;}
+.abtVideoWrap{height: 100vh;background: url(../images/abtmainbg.jpg)  no-repeat  center/cover;position: relative;width: 100%;display: table;}
+.abtVideoWrap .abtVideo {height: 100vh;display: table-cell;vertical-align: middle; width: 100%;}
+.abtVideoWrap .txtBlock{width: 316px;margin-right: 60px;}
 .abtVideoWrap .txtBlock .vTitle{font-size: 36px;margin-bottom: 55px}
 .abtVideoWrap .txtBlock p{font-size: 14px;line-height: 20px}
 .abtVideoWrap .videoBlock{width: 767px}
@@ -265,7 +261,7 @@ margin: 20px 20px 0 0;color: #606060;}
 
 /*------ ourTeam start ----------*/
 .ourTeam .teamMember {margin-top: 50px}
-.ourTeam .teamMember li{display:inline-block;width: 12%; margin-left: 9%;}
+.ourTeam .teamMember li{display:inline-block;width: 12.5%; margin-left: 6%;}
 .ourTeam .teamMember li:first-child{margin-left: 0}
 .ourTeam .teamMember li .designation{color: #1b1d24;text-align: center;margin-top: 20px}
 /*------- ourTeam end --------------*/
