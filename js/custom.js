@@ -5,7 +5,7 @@ $(document).ready(function(){
 			});
 			$('body').ALightBox({
 				showYoutubeThumbnails: true,
-				});
+			});
 			$("#alb_icon_close").click(function(){
 				$("#alb_content").children('iframe').attr("src", "");
 			});
@@ -25,6 +25,7 @@ $(document).ready(function(){
 				$(".btnSign").val('sign in');
 				$(".dividerBlock .divider").css({"height": 150, "transition": "all 0.5s ease"});
 			});
+
 			
 
 

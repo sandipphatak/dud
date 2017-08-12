@@ -76,7 +76,7 @@
 					<section class="row">
 						<div class="col-12 pad-0 articlepanel">
 							<article>
-								<div class="col-8 pad-0 leftpanel">
+								<div class="pad-0 leftpanel">
 									<figure>
 										<img src="images/articlepic.jpg" alt="" />
 									</figure>
@@ -130,7 +130,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-4 rightpanel fr">
+								<div class="rightpanel fr">
 									<div class="emailsubpanel">
 										<h5 class="heading_h5">BE THE FIRST TO KNOW</h5>
 										<p class="articlecopy">
@@ -139,58 +139,111 @@
 										<input type="text" name="" class="esubfield" placeholder="Email Address">
 										<button type="button" class="btn-red">SUBSCRIBE</button>
 									</div>
-								</div>
-							</article>
-						</div>
-					</section>
-					
-					
-				</div>
-			</div>
-			<!-- homeBaner end -->
-			<!-- joinDud end -->
-			<div class="footerWrap clearfix">
-				<div class="containerMd clearfix">
-					<div class="footerLogo fl">
-						<a href="#"><img src="images/footlogo.png"></a>
+									<div class="newslist">
+										<div class="newstab">
+											<ul class="listtab">
+												<li class="active"><a href="javascript:void(0);">TRENDING</a></li>
+												<li><a href="javascript:void(0);">LATEST</a></li>
+												<li><a href="javascript:void(0);">TOP</a></li>
+											</ul>
+											<div class="newslistpanel fl">
+												<ul class="trendingnewlist">
+													<li>
+														<figure class="bgray">
+															<img src="images/letestnews.jpg" alt="">
+														</figure>
+														<figcaption>
+														<h5 class="heading_h5">Lorem ipsum dolor sit amet</h5>
+														<h6 class="heading_h6 datetxt">JULY 21, 2017</h6>
+														
+														</figcaption>
+													</li>
+													<li>
+														<figure class="bgray">
+															<img src="images/letestnews.jpg" alt="">
+														</figure>
+														<figcaption>
+														<h5 class="heading_h5">Lorem ipsum dolor sit amet</h5>
+														<h6 class="heading_h6 datetxt">JULY 21, 2017</h6>
+														
+														</figcaption>
+													</li>
+													<div class="adpanel">
+														<a href="#" class="dudad">
+															<img src="images/dudad.jpg" src=""/>
+														</a>
+													</div>
+													<div class="socialpanel">
+														<p class="arelatehead">FOLLOW US</p>
+														<hr class="blackhr">
+														<div class="socialicon">
+															<a href="facebook">
+																<span class="facebooklogo"></span>
+															</a>
+															<a href="instagram">
+																<span class="instagram"></span>
+															</a>
+															<a href="twitter">
+																<span class="twitter"></span>
+															</a>
+															<a href="youtube">
+																<span class="youtube"></span>
+															</a>
+
+														</div>
+
+														<div class="instagrampanel">
+														<p class="arelatehead">INSTAGRAM</p>
+														<hr class="blackhr">
+														<div class="socialicon">
+															<a href=""><img src="images/instagrampic.jpg"></a>
+															<a href=""><img src="images/instagrampic.jpg"></a>
+															<a href="" class="last"><img src="images/instagrampic.jpg"></a>
+
+														</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</section>
+						
+						
 					</div>
-					<div class="social fl">
-						<h6 class="headH6">follow Us</h6>
-						<a href="#" class="fb socialIcon"></a>
-						<a href="#" class="insta socialIcon"></a>
-						<a href="#" class="twit socialIcon"></a>
-						<a href="#" class="yt socialIcon"></a>
-					</div>
-					<div class="instaUpdates fr">
-						<h6 class="headH6">instagram</h6>
-						<div class="inUpdate fl"></div>
-						<div class="inUpdate fl"></div>
-						<div class="inUpdate fl"></div>
+				</div>
+				<!-- homeBaner end -->
+				
+				<!-- footerWrap end -->
+				<div class="btmFooter txt-center clearfix footerwithtxt">
+					<div class="containerMd containerMd">
+						<a href="#">Terms & Conditions </a>
+						<a href="#">Waiver</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">&copy; 5678MediaGroup  </a>
+						<a href="#">Developed & Maintained by Infinity Design</a>
 					</div>
 				</div>
-				<!-- container end -->
+				<!-- btmFooter end -->
 			</div>
-			<!-- footerWrap end -->
-			<div class="btmFooter txt-center clearfix">
-				<div class="containerMd containerMd">
-					<a href="#">Terms & Conditions </a>
-					<a href="#">Waiver</a>
-					<a href="#">Privacy Policy</a>
-					<a href="#">&copy; 5678MediaGroup  </a>
-					<a href="#">Developed & Maintained by Infinity Design</a>
-				</div>
-			</div>
-			<!-- btmFooter end -->
-		</div>
-		<script src="js/jquery-1.9.1.min.js"></script>
-		<script src="js/responsiveCarousel.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$(".loginpanel").on("click",function(){
-				$(".dropdownMenu").animate({top: "110px"});
+			<script src="js/jquery-1.9.1.min.js"></script>
+			<script src="js/responsiveCarousel.min.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function(){
+				$(".loginpanel").on("click",function(){
+					$(".dropdownMenu").animate({top: "110px"});
+				});
+				$('.crsl-items').carousel({ autoRotate: 8000, visible: 2, itemMinWidth: 400, itemMargin: 0 });
+
+				$(".listtab li a").click(function(){
+					$(".listtab li a").parent().removeClass("active");
+					$(this).parent().addClass("active");				
+				});
+			
 			});
-			$('.crsl-items').carousel({ autoRotate: 8000, visible: 2, itemMinWidth: 400, itemMargin: 0 });
-		});
-		</script>
-	</body>
-</html>
+			</script>
+		</body>
+	</html>
