@@ -113,7 +113,7 @@ select:-webkit-autofill, input:-webkit-autofill {
 
 
 /*-------- commonTemp2 start -------------*/
-/*used in california page and spnsored us */
+/*used in california page and spnsored us , about us page */
 .commonTemp2 .headH2{color: #ffffff}
 .commonTemp2 .colhalf{width: 47%; font-size: 14px; }
 .commonTemp2 .colhalf p{ line-height: 21px}
@@ -282,15 +282,10 @@ margin: 20px 20px 0 0;color: #606060;}
 .abtVideoWrap .txtBlock p{font-size: 14px;line-height: 20px}
 .abtVideoWrap .videoBlock{width: 767px}
 
-<<<<<<< HEAD
-.abtWrap .colhalf{width: 47%; font-size: 14px; }
-.abtWrap .colhalf p{ line-height: 21px}
-=======
 
->>>>>>> d22d5963195d635b75b03fc149b0f63760f9a26e
 /*------ visionBlock start ----------*/
 .visionWrap{color: #1b1d24;padding-bottom: 100px}
-.visionWrap .headH2{margin-bottom:100px;}
+.visionWrap .headH2{margin-bottom:100px;color: #1b1d24}
 .visionWrap .headH6{margin-bottom: 20px}
 
 /*------- visionBlock end --------------*/
@@ -308,11 +303,8 @@ margin: 20px 20px 0 0;color: #606060;}
 /*------- sponserUs end --------------*/
 
 .season2{background: url(../images/season2bg.jpg) no-repeat center;}
-<<<<<<< HEAD
-=======
 
 .commonTemp1 .dudNumList li{margin-left:4%;}
->>>>>>> d22d5963195d635b75b03fc149b0f63760f9a26e
 /*---------- about us css end ------------*/
 
 
