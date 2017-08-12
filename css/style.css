@@ -57,8 +57,10 @@ select:-webkit-autofill, input:-webkit-autofill {
 .width100{width: 100%}
 .txtcopy{font-size: 14px;line-height: 20px;color: #1b1d24}
 
-
+.btn{color: #ffffff;padding: 15px 25px;text-transform: uppercase;font-weight: 900}
 .btnPrimary{background: #e32b45;padding: 15px 20px;color: #ffffff;display: inline-block; text-transform: uppercase;}
+.btnSecond{background: #1b1d24}
+.inBlock{display: inline-block;}
 /*******************/
 
 
@@ -94,6 +96,30 @@ select:-webkit-autofill, input:-webkit-autofill {
 .marg-t-20 { margin-top: 42px }
 .pad-0 { padding: 0; }
 /**********/
+
+/*-------- commonTemp1 start --------*/
+/*used in about us and california page */
+.commonTemp1 .bg1{background: #374785}
+.commonTemp1 .bg2{background: #e32b45}
+.commonTemp1 .bg3{background: #a8d1e7}
+.commonTemp1 .boxWrap{width: 100%;height: 192px;display: table;}
+.commonTemp1 .boxInner{display: table-cell;vertical-align: middle;}
+.commonTemp1 .boxInner .headH2, .commonTemp1 .boxInner p{color: #ffffff;}
+.commonTemp1 .boxList li{width: 16.5%;display: inline-block;margin-left: 10%;vertical-align: top;}
+.commonTemp1 .boxList li:first-child{margin-left: 0}
+.commonTemp1 .boxList .titleTxt{text-transform: uppercase;color: #1b1d24;margin: 35px 0 15px;font-weight: bold;}
+
+/*-------- commonTemp1 end --------*/
+
+
+/*-------- commonTemp2 start -------------*/
+/*used in california page and spnsored us */
+.commonTemp2 .headH2{color: #ffffff}
+.commonTemp2 .colhalf{width: 47%; font-size: 14px; }
+.commonTemp2 .colhalf p{ line-height: 21px}
+
+/*-------- commonTemp2 end -------------*/
+
 
 
 /*----- video css start --------*/
@@ -256,8 +282,12 @@ margin: 20px 20px 0 0;color: #606060;}
 .abtVideoWrap .txtBlock p{font-size: 14px;line-height: 20px}
 .abtVideoWrap .videoBlock{width: 767px}
 
+<<<<<<< HEAD
 .abtWrap .colhalf{width: 47%; font-size: 14px; }
 .abtWrap .colhalf p{ line-height: 21px}
+=======
+
+>>>>>>> d22d5963195d635b75b03fc149b0f63760f9a26e
 /*------ visionBlock start ----------*/
 .visionWrap{color: #1b1d24;padding-bottom: 100px}
 .visionWrap .headH2{margin-bottom:100px;}
@@ -274,26 +304,43 @@ margin: 20px 20px 0 0;color: #606060;}
 
 /*------- sponserUs end --------------*/
 .sponserUs{background: url(../images/sponserBg.jpg) no-repeat center;}
-.sponserUs .headH2{color: #ffffff}
 .sponserUs .sponserBtn{text-transform: uppercase;background: #374785;color: #ffffff;font-size: 20px;padding: 10px 30px ;display: inline-block;}
 /*------- sponserUs end --------------*/
 
-/*----- Numbers css start ---------*/
-.dudNumbers .bg1{background: #374785}
-.dudNumbers .bg2{background: #e32b45}
-.dudNumbers .bg3{background: #a8d1e7}
-.dudNumbers .numBoxWrap{width: 192px;height: 192px;display: table;}
-.dudNumbers .numWrap{display: table-cell;vertical-align: middle;}
-.dudNumbers .numWrap .headH2, .dudNumbers .numWrap p{color: #ffffff;}
-.dudNumbers .dudNumList li{width: 16.5%;display: inline-block;margin-left: 4%}
-.dudNumbers .dudNumList li:first-child{margin-left: 0}
-.dudNumbers .dudNumList .titleTxt{text-transform: uppercase;color: #1b1d24;margin: 35px 0 15px;font-weight: bold;}
-/*----- Numbers css end ---------*/
-
 .season2{background: url(../images/season2bg.jpg) no-repeat center;}
+<<<<<<< HEAD
+=======
+
+.commonTemp1 .dudNumList li{margin-left:4%;}
+>>>>>>> d22d5963195d635b75b03fc149b0f63760f9a26e
 /*---------- about us css end ------------*/
 
 
+
+/*------ california css start -----------*/
+.caliMainBlock {background: url(../images/californiabg.jpg) no-repeat center/cover;display: table;width: 100%; height: 100vh}
+.caliMainBlock .caliTxtWrap{display: table-cell;vertical-align: middle; color: #ffffff; height: 100vh}
+.caliMainBlock .caliTxtWrap .caliImg{margin-right: 50px}
+
+.caliTxtWrap .caliTxt .headH1{margin: 36px 0}
+.caliTxtWrap .caliTxt .divider{width: 100px ;height: 1px; background: #ffffff}
+
+.caliTxtWrap .caliTxt .headH2{color: #ffffff;margin: 50px 0 100px;font-weight: normal;}
+
+.caliTxtWrap .presentBy .zeeTv{background: url(../images/zee.png) no-repeat left center;width: 90px;height: 75px;
+    border-right: 2px solid #ffffff; padding: 60px 0;}
+.caliTxtWrap .presentBy .mediaGroup{background: url(../images/5676mdia.png) no-repeat  center;width: 160px ;height: 120px}
+
+.joinDud{background: #1b1d24}
+.joinDud .btnPrimary{padding: 16px 50px}
+
+.californiaPage .dudProcess li{width: 18%}
+/*------ california css end -----------*/
+
+
+/*---------- sponsor us page css start ------------*/
+.spnsorBg{background: url(../images/sponsorbg.jpg) center/cover;}
+/*---------- sponsor us page css end ------------*/
 
 
 
