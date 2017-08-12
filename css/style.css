@@ -54,16 +54,11 @@ select:-webkit-autofill, input:-webkit-autofill {
 .headH2{color: #1b1d24;font-weight: 900;font-size: 36px;}
 .headH2 span{font-weight: 400}  
 .headH6{color: #1b1d24;font-size: 18px}
-.mgZero{margin:0 !important }
-.paddTopBtm {padding: 100px 0}
-.mgTop100{margin-top: 100px}
-.mgBtm50{margin-bottom: 50px}
-.mgTop50{margin-top: 50px}
 .width100{width: 100%}
 .txtcopy{font-size: 14px;line-height: 20px;color: #1b1d24}
 
 
-.btnPrimary{background: #e32b45;padding: 15px 20px;color: #ffffff;display: inline-block;}
+.btnPrimary{background: #e32b45;padding: 15px 20px;color: #ffffff;display: inline-block; text-transform: uppercase;}
 /*******************/
 
 
@@ -309,3 +304,11 @@ margin: 20px 20px 0 0;color: #606060;}
 .btmFooter a{font-size: 14px; color: #fff; margin-right: 50px}
 
 /*---------------footer css end-------------------*/
+
+/******common margin padding*****/
+.mgZero{margin:0 !important }
+.paddTopBtm {padding: 100px 0}
+.pad-tb-15 { padding: 15px 55px}
+.mgTop100{margin-top: 100px}
+.mgBtm50{margin-bottom: 50px}
+.mgTop50{margin-top: 50px}
